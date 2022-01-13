@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chantur</title>
+    <meta name="keywords" content="Geodaten">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="author" content="Chanturia">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./css/menuMedia.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="./js/jquery-2.1.0.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+
+        <div class="menu">
+
+
+
+            <div class="menu__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu__links">
+                <ul id="nav">
+                    <li><a href="./index.html" class="sub" tabindex="1">О проекте</a>
+
+                    </li>
+                    <li><a href="./index.html" class="sub" tabindex="1">Обзор предвыборных компаний</a>
+                        <ul>
+                            <li><a class="a-menuPointUnter" href="./">Партии</a></li>
+                            <li><a class="a-menuPointUnter" href="./">Новости</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index.html" class="sub" tabindex="1">Пройти опрос</a>
+                        <ul>
+                            <li><a class="a-menuPointUnter" href="./">Акктуальные выборы</a></li>
+                            <li><a class="a-menuPointUnter" href="./">История</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index.html" class="sub" tabindex="1">Анализ</a>
+                        <ul>
+                            <li><a class="a-menuPointUnter" href="./">Статистическая визуализация</a></li>
+                            <li><a class="a-menuPointUnter" href="./">Мнение большинства</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="logo">
+                <a href="index.html"><img src="./img/illu/logo.svg" alt="logo"></a>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            (function ($) {
+                $(function () {
+                    $('.menu__icon').on('click', function () {
+                        $(this).closest('.menu')
+                            .toggleClass('menu_state_open');
+                    });
+
+                    $('.menu__links-item').on('click', function () {
+                        // do something
+
+                        $(this).closest('.menu')
+                            .removeClass('menu_state_open');
+                    });
+                });
+            })(jQuery);
+        </script>
+
+
+
+        <!-- Main container -->
+
+        <!-- banner -->
+        <div class="banner" id="banner-1" style="height: 950px;">
+
+            <div id="banner-content">
+
+                <!-- banner-text -->
+                <div class="banner-text">
+                    <h1>"Зачем мне регистрация?"</h1>
+                    <h2>Потому что Ваше мнение индивидуально!</h2>
+                    <h3>Мы хотим узнать точную позицию нашего общества к актуальным политическим вопросам страны. 
+                        Для того, чтобы каждое мнение оставалось частным и индивидуальным, вам следует пройти не большую регистрацию, чтобы один и тот же потенциальный избиратель не смог дважды пройти тест или за него не мог это сделать кто-то другой. 
+                    </h3>
+                    <button class="main-button">Пройти регистрацию</button>
+                </div>
+
+
+                <!-- banner-image -->
+                <div class="banner-image">
+                    <div class="BoxBannerImage">
+                        <img src="./img/illu/registration.svg" alt="wahl" class="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <section>
+
+        <div class="content">
+
+            <div class="content-section">
+
+                <div class="content-box-bright">
+
+                    <div class="content-box-bright-subject">
+                        <h4 class="h-mainhaed">Ваши данные останутся сохранны!</h4>
+                        <div class="content-box-subject">
+                            <p class="p-box-subject">
+                                Мы не будем использовать ваши личные данные в коммерческих, политических или каких-либо других целях, за исключением данного опроса. 
+                            </p>
+                            <p class="p-box-subject">
+                                По окончанию выборов ваши паспортные данные будут стёрты из нашей системы.
+                            </p>
+                            <p class="p-box-subject">
+                                Результаты предыдущих предвыборных опросов будут опубликованы в нашей рубрике „<b>история</b>“ и могут быть использованы любым желающим в целях социальных и политических анализов, а также в целях сравнения с предстоящими выборами и современной позиции общества. 
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-box-dark color-dark">
+                    <div class="content-box-dark-subject">
+                        <h4 class="h-mainhaed"></h4>
+                        <div class="content-box-subject-img">
+                            <img src="./img/illu/safe-white.svg" alt="wahl" class="subject-img">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="content-section">
+
+                <div class="content-box-dark color-yellow">
+                    <div class="content-box-dark-subject">
+                        <h4 class="h-mainhaed"></h4>
+                        <div class="content-box-subject-img">
+                            <img src="./img/illu/profile.svg" alt="wahl" class="subject-img">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content-box-bright">
+
+                    <div class="content-box-bright-subject">
+                        <h1 class="h-mainhaed">Регистрация</h1>
+                        <div class="content-box-subject">
+                            <p class="p-box-subject">
+                                Пожалуйста, вводите точную информацию, так как общий статистический анализ создается на основе введенных вами данных.
+                            </p>
+                            <p class="p-box-subject">
+                                Если вы допустим не точно укажите свой возраст или регион проживания, мы не сможем понять потенциальную позицию общества на следующих выборах. 
+                            </p>
+                            <div class="containerForForm">
+                                <div class="choose">
+                                    <form>
+                        
+                                        <div class="form-group">
+                                            <label class="labelDescription" for="name">Имя:</label>
+                                            <input type="text" class="form-control" id="regFormFirstname" placeholder="სახელი">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Фамилия:</label>
+                        
+                                            <input type="text" class="form-control" id="regFormLastname" placeholder="გვარი">
+                                        </div>
+                                        <div class="form-group">
+                        
+                                            <label for="name">E-Mail:</label>
+                                            <input type="email" class="form-control" id="regFormEmail" placeholder="Email@gmail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="labelDescription" for="name">ID номер:</label>
+                                            <input type="text" class="form-control" id="regFormFirstname" placeholder="პ/ნ 62202303232">
+                                        </div>
+                        
+                        
+                                        <div class="form-group">
+                                            <label for="name">Возраст:</label>
+                                            <select id="regFormfamilyStatus" class="form-control">
+                                                <option selected>18-25</option>
+                                                <option>26-35</option>
+                                                <option>36-55</option>
+                                                <option>56-70</option>
+                                                <option>56-70</option>
+                                                <option>71+</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Регион:</label>
+                        
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Тбилиси</option>
+                                                <option>Абхазия</option>
+                                                <option>Аджара</option>
+                                                <option>Гурия</option>
+                                                <option>Имэрэти</option>
+                                                <option>Кахэти</option>
+                                                <option>Мцхета Тианэти</option>
+                                                <option>Самэгрэло – Зэмо Сванэти</option>
+                                                <option>Самцхэ – Джавахэти</option>
+                                                <option>Квэмо Картли</option>
+                                                <option>Шида Картли</option>
+                                                <option>Схва</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Семейный статус:</label>
+                                            <select id="regFormfamilyStatus" class="form-control">
+                                                <option selected>В браке</option>
+                                                <option>Не состою в браке</option>
+                                                <option>В разводе</option>
+                                                <option>Вдовец / Вдова</option>
+                                                <option>Другое</option>
+                                            </select>
+                                        </div>
+                        
+                                        <div class="form-group">
+                                            <label for="name">Образование:</label>
+                                            <select id="regFormEducation" class="form-control">
+                                                <option selected>Школьное</option>
+                                                <option>Студент/ка</option>
+                                                <option>Проф. академия</option>
+                                                <option>Бакалавр</option>
+                                                <option>Магистр</option>
+                                                <option>Доктор</option>
+                                            </select>
+                                        </div>
+                        
+                                        <div class="form-group">
+                                            <label for="name">Занятость:</label>
+                                            <select id="regFormEducation" class="form-control">
+                                                <option selected>Студент</option>
+                                                <option>Работаю</option>
+                                                <option>Не работаю</option>
+                                                <option>Частный бизнес</option>
+                                                <option>Фриланс</option>
+                                                <option>В дикрете</option>
+                                                <option>Пенсионер</option>
+                                                <option>Другое</option>
+                                            </select>
+                                        </div>
+                        
+                                        <div class="form-group">
+                                            <label for="name">Вид дохода:</label>
+                                            <select id="regFormEducation" class="form-control">
+                                                <option selected>Зарплата</option>
+                                                <option>Бизнес</option>
+                                                <option>Социаная помощь</option>
+                                                <option>Пенсия</option>
+                                                <option>Помощь беженцам</option>
+                                                <option>Степендия</option>
+                                                <option>Иностранная помощь</option>
+                                                <option>Другое</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="name">Месячный доход в Лари</label>
+                                            <select id="regFormfamilyStatus" class="form-control">
+                                                <option selected>От 300 до 700</option>
+                                                <option>От 701 до 1200</option>
+                                                <option>От 1201 до 2000</option>
+                                                <option>От 2001 до 3000</option>
+                                                <option>От 3001 до 4000</option>
+                                                <option>От 4000 до 6000</option>
+                                                <option>От 6000 и более</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                        
+                                </div>
+                                <div class="containerForSubmitAndCheck">
+                                    <div class="submitCheckmark">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            <a href="#">Соглашения для регистрационной формы</a>
+                                        </label>
+                                    </div>
+                                    <div class="buttonAndCheckmark">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block main-button">Подтвердить</button>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+</body>
+
+<footer>
+
+        <div class="footer-box-left">
+            <p class="p-footer">Контакт</p>
+            <p class="p-footer">О разработчике</p>
+        </div>
+        <div class="footer-box-right">
+            <p class="p-footer">Юридическое</p>
+        </div>
+
+</footer>
+
+</html>

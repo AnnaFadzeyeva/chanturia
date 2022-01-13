@@ -1,0 +1,91 @@
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	}
+	
+	@font-face {
+		font-family: FiraGo-Book;
+		src: url(../fonts/Download_Folder_FiraGO_1001/Fonts/FiraGO_OTF_1001/Roman/FiraGO-Book.otf);
+	}
+	
+	@font-face {
+		font-family: FiraGo-Heavy;
+		src: url(../fonts/Download_Folder_FiraGO_1001/Fonts/FiraGO_OTF_1001/Roman/FiraGO-Heavy.otf);
+	}
+	
+	@font-face {
+		font-family: FiraGo-Light;
+		src: url(../fonts/Download_Folder_FiraGO_1001/Fonts/FiraGO_OTF_1001/Roman/FiraGO-Light.otf);
+	}
+	
+	@font-face {
+		font-family: FiraGo-Bold;
+		src: url(../fonts/Download_Folder_FiraGO_1001/Fonts/FiraGO_OTF_1001/Roman/FiraGO-Bold.otf);
+	}
+
+
+
+    /* Menu simple */
+
+
+
+      .sub, .a-menuPointUnter {
+        list-style: none;
+        text-decoration: none;
+        background:#ffffff;
+        color:rgb(0, 0, 0);
+        font-family: FiraGo-Light;
+        line-height:50px;
+        display: block; 
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: left;
+      }
+
+      .sub:hover, .a-menuPointUnter:hover {
+        background:#197bc0;
+        color: #ffffff;
+      }
+
+    #nav{
+        display: flex;
+        float: right;
+        margin-right: 40px;
+    }
+
+#nav a{
+  z-index: 1000;
+  position: relative;
+}
+
+      li {
+        float:left;
+        position:relative;
+        top: 60px;
+        list-style: none;
+        padding-right: 20px;
+      }
+                    
+          li > ul {
+              position:absolute;
+              top: -10px;
+              display:none;   
+              font-size: 0.9em;
+              padding: 0px;
+          }
+           
+          li:hover > ul {
+              display:block; 
+              width:270px;  /*Weite der DropDowns*/   
+              padding: 0px;
+              
+
+          }
+         li:hover > ul > li {
+              float:none;
+          }
+
+
+
+

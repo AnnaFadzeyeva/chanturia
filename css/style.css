@@ -1,0 +1,263 @@
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	}
+	
+	@font-face {
+		font-family: FiraGo-Book;
+		src: url(../fonts/Download_Folder_FiraGO_1001/Fonts/FiraGO_OTF_1001/Roman/FiraGO-Book.otf);
+	}
+	
+	@font-face {
+		font-family: FiraGo-Heavy;
+		src: url(../fonts/Download_Folder_FiraGO_1001/Fonts/FiraGO_OTF_1001/Roman/FiraGO-Heavy.otf);
+	}
+	
+	@font-face {
+		font-family: FiraGo-Light;
+		src: url(../fonts/Download_Folder_FiraGO_1001/Fonts/FiraGO_OTF_1001/Roman/FiraGO-Light.otf);
+	}
+	
+	@font-face {
+		font-family: FiraGo-Bold;
+		src: url(../fonts/Download_Folder_FiraGO_1001/Fonts/FiraGO_OTF_1001/Roman/FiraGO-Bold.otf);
+	}
+
+  @font-face {
+		font-family: FiraGo-ExtraLightItalic;
+		src: url(../fonts/Download_Folder_FiraGO_1001/Fonts/FiraGO_OTF_1001/Italic/FiraGO-ExtraLightItalic.otf);
+	}
+
+body{
+	margin:0;
+	padding:0;
+    background:#FFF;
+    overflow-x:hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll;
+	overflow-x: hidden;
+  font-family: FiraGo-Light;
+}
+
+
+#logo{
+	position: fixed;
+	top: 15px;
+	z-index: 2;
+	width: 100px;
+  	left: 35px;
+}
+
+
+.menu {
+  position: fixed;
+  top: 0px;
+  text-align: right;
+  background-color: #ffffff;
+  width: 100%;
+  height: 110px;
+  z-index: 2;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+/* banner */
+
+.banner {
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	position: relative;
+  	background: url(../img/bg/) center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+	background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
+}
+
+#banner-1{
+	height: 800px;
+    overflow: hidden;
+}
+
+#banner-content{
+  position: relative;
+  top: 200px;
+  display:  flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.banner-text{
+  font-family: FiraGo-Book;
+	padding-left: 40px;
+  padding-top: 40px;
+  width: 50%;
+
+}
+
+.banner-image{
+  width: 35%;
+  margin: auto;
+
+}
+
+h1{
+  font-family: FiraGo-Heavy;
+	text-align: left;
+	position: relative;
+	color: #222222;
+	font-size: 5em;
+
+	padding: 10px;
+
+}
+
+h2{
+  font-family: FiraGo-Light;
+	text-align: left;
+  color: #222222;
+	position: relative;
+  padding: 10px;
+  font-size: 2.4em;
+  font-family: FiraGo-Light;
+}
+
+h3{
+	font-family: FiraGo-Light;
+	  text-align: left;
+	color: #222222;
+	  position: relative;
+	padding: 10px;
+	font-size: 1.4em;
+	font-family: FiraGo-Light;
+  }
+
+h4{
+	font-family: FiraGo-Light;
+	text-align: left;
+	color: #222222;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	font-size: 1.8em;
+	font-family: FiraGo-Light;
+  }
+
+
+.main-button{
+	border: none;
+    outline: none;
+	background-image: linear-gradient( 110.3deg,  rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+	color:white;
+	padding: 17px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.4em;
+	border-radius: 5px;
+	margin: 10px;
+	margin-top:  40px;
+}
+
+.content{
+	width: 100vw;
+}
+
+.content-section{ 
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.content-box-bright, .content-box-dark{
+	width: 50vw;
+}
+
+
+.content-box-bright-subject, .content-box-dark-subject{
+	width: 80%;
+	margin: 0% auto;
+	padding-top: 150px;	
+	padding-bottom: 150px;
+}
+
+.color-dark{
+	background-image: linear-gradient( 110.3deg,  rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+}
+
+.color-yellow{
+	background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
+}
+
+.p-box-subject{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.2em;
+}
+
+.content-box-subject-img{
+	position: relative;
+	width: 75%;
+	height: auto;
+	margin: 0% auto;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+.form-group{
+	padding: 5px;
+	padding-left: 20px;
+	font-size: 1.2em;
+
+}
+
+.h-mainhaed{
+	font-family: FiraGo-Heavy;
+	text-align: left;
+	position: relative;
+	color: #222222;
+	font-size: 4em;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+footer{
+	width: 100vw;
+	background-image: linear-gradient( 110.3deg,  rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+}
+
+.footer-box-left, .footer-box-right{
+	padding: 70px;
+	width: 50vw;
+}
+
+.p-footer{
+	color: white;
+	padding: 10px;
+	font-size: 1.2em;
+}
